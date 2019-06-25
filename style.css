@@ -1,8 +1,3 @@
-html{
-    background-color: #F1DBD2;
-    font-family: serif;
-    /*font-size: 18px !important;*/
-}
 body{
     color: #000000;
     font-size: 18px !important;
@@ -101,6 +96,7 @@ img{
     /*border: 5px solid #6D6875;*/
     border-radius: 25px;
     margin: auto;
+    width: 30% 
 }
 div#menu{
     margin: auto;
