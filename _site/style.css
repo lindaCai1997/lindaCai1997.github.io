@@ -96,8 +96,7 @@ img{
     /*border: 5px solid #6D6875;*/
     border-radius: 25px;
     margin: auto;
-    width: 40%;
-}
+    width: 500px; 
 div#menu{
     margin: auto;
     width: 20%;
