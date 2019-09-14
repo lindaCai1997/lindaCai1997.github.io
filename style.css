@@ -3,7 +3,7 @@ body{
     font-size: 18px !important;
 }
 div.bigBox{
-    margin: auto;
+    margin: 0;
     padding: 30px;
 }
 
@@ -15,7 +15,7 @@ h1{
     margin-bottom: 2px;
 }
 h2{
-    color: #000000;
+    color: #556B2F;
     font-size: 30px !important;
     text-align: center;
     padding-top: 10px;
@@ -96,7 +96,8 @@ img{
     /*border: 5px solid #6D6875;*/
     border-radius: 25px;
     margin: auto;
-    width: 300px; 
+    width: 100%;
+} 
 div#menu{
     margin: auto;
     width: 20%;
@@ -128,17 +129,25 @@ div.content{
 }
 div#digiWork{
     /*background-color: #FFFFFF;*/
-    width: 50%;
+    /*width: 50%;*/
     /*border-radius: 25px !important;
     outline-style: solid;
     outline-width: thick;
     outline-color: #6D6875;*/
-    padding: 10px;
+    padding-left: 0.05in;
+    padding-right: 50px;
     font-size: 18px;
+    text-align: justify;
+    width: 65%;
+    float: left;
+    overflow:hidden;
 }
 div#image{
-    width: 40%;
-    float: right;
+    width: 20%;
+    min-width: 150px;
+    float: left;
+    margin-right:50px;
+    overflow:hidden;
 }
 div.content p{
     margin: auto;
@@ -184,20 +193,19 @@ i.name{
 }
 
 a:link{
-    text-decoration: none;
-/*font-size: 18px;*/
-    color: #5E2129;
+    text-decoration: underline;
+    color:blue;
 }
+
 a:visited{
-    text-decoration: none;
+    text-decoration: underline;
     color: #5E2129;
  /*   font-size: 18px;*/
 
 }
 a:hover{
-    text-decoration: none;
-    color: #ECBEB4;
-    background-color: #000000;
+    text-decoration: underline;
+/*    background-color: #000000;*/
 /*    font-size: 18px;*/
 
 }
@@ -212,3 +220,32 @@ p{
     font-size:16pt;
     margin:auto;
 }
+
+div.title {
+    line-height: 105%;
+    font-size: 55px;
+    font-weight: bold;
+    color: #556B2F;
+    margin-top: 12.0pt;
+    margin-right: .3in;
+    margin-left: .3in;
+    margin-bottom: .0001pt;
+}
+
+div.affiliation{
+    line-height: 80%;
+    font-size: 30px;
+    color: #556B2F;
+    margin-top: 0pt;
+    margin-right: 0.05in;
+    margin-left: 0.05in;
+    margin-bottom: .0001pt;
+}
+
+hr{
+    margin:0.05in;
+    /*padding-left:0px;*/
+    /*box-align:left;*/
+    background-color:#003000;
+}
+
