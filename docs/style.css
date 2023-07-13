@@ -1,0 +1,258 @@
+body{
+    color: #000000;
+    font-size: 16px !important;
+    font-family: "Verdana"; 
+}
+div.bigBox{
+    margin: 0;
+    padding: 30px;
+}
+
+h1{
+    color: #000000;
+    font-size: 60px !important;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+h2{
+    color: #556B2F;
+    font-size: 28px !important;
+    text-align: left;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+h3{
+   
+    color: #3b4e1b;
+    font-size: 22px !important;
+    text-align: left;
+    text-decoration: underline;     
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+}
+
+p{
+    font-size: 16px !important;
+    margin: auto;
+}
+p.intro{
+    padding-top: 15px;
+}
+p#TAIntro{
+    margin-top:15px;
+    /*padding-top:15px;*/
+    margin-bottom:10px;
+    margin-left:5px;
+}
+#heading{
+    list-style-type: none;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    width: 60%;
+    border-radius: 8px;
+    outline-style: dotted;
+    outline-width: thick;
+    outline-color: #97A3A1;
+}
+#headingIndex{
+    list-style-type: none;
+    font-size: 18px;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    width: 60%;
+    border-radius: 25px;
+    outline-style: dotted;
+    outline-width: thick;
+    outline-color: #97A3A1;
+}
+ul#headingIndex li{
+    display: inline;
+    padding: 5px;
+    font-size: 16px;
+}
+ul#heading li{
+    display: inline;
+    padding: 10px;
+    font-size: 18px;
+}
+
+img{
+    /*border: 5px solid #6D6875;*/
+    border-radius: 25px;
+    margin: auto;
+    width: 100%;
+} 
+div#menu{
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    border: 5px solid #6D6875;
+    border-radius: 25px;
+    background-color: #ECBEB4;
+    padding: 5px;
+    font-size: 20px !important;
+}
+div#foot{
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+    text-align: center !important;
+    float: left;
+    font-size: 12px !important;
+}
+div.content{
+    background-color: #FFFFFF;
+    margin: auto;
+    font-size: 18px;
+    width: 90%;
+    border-radius: 8px;
+    outline-style: solid;
+    outline-width: thick;
+    outline-color: #6D6875;
+    padding-bottom: 10px;
+}
+div#digiWork{
+    /*background-color: #FFFFFF;*/
+    /*width: 50%;*/
+    /*border-radius: 25px !important;
+    outline-style: solid;
+    outline-width: thick;
+    outline-color: #6D6875;*/
+    padding-left: 0.05in;
+    padding-right: 50px;
+    font-size: 18px;
+    text-align: justify;
+    width: 60%;
+    float: left;
+    overflow:hidden;
+}
+div#image{
+    width: 25%;
+    min-width: 150px;
+    float: left;
+    margin-right:50px;
+    overflow:hidden;
+}
+div.content p{
+    margin: auto;
+    padding: 10px;
+    padding-top: 5px;
+    font-size: 18px;
+    padding-left: 30px;
+    margin-right: 20%;
+}
+.date{
+    float: right;
+    padding-right: 10px;
+    font-size: 18px;
+}
+.loc{
+    float: right;
+    padding-right: 10px;
+    font-size: 18px;
+}
+.name{
+    float: left;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.place{
+    float: left;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.degree{
+    float: left;
+    padding-left: 30px;
+    font-size: 18px;
+}
+i.name{
+    font-weight: bold;
+    font-size: 18px;
+}
+.position{
+    float: left;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+a:link{
+    text-decoration: underline;
+    color:blue;
+}
+
+a:visited{
+    text-decoration: underline;
+    color: #5E2129;
+ /*   font-size: 18px;*/
+
+}
+a:hover{
+    text-decoration: underline;
+/*    background-color: #000000;*/
+/*    font-size: 18px;*/
+
+}
+/*https://coolors.co/f1dbd2-93928d-ecbeb4-b19994-6d6875*/
+
+/*TEST PAGE STYLING*/
+
+div.title {
+    line-height: 105%;
+    font-size: 55px;
+    font-weight: bold;
+    color: #556B2F;
+    margin-top: 12.0pt;
+    margin-right: .3in;
+    margin-left: .3in;
+    margin-bottom: .0001pt;
+}
+
+div.affiliation{
+    line-height: 80%;
+    font-size: 30px;
+    color: #556B2F;
+    margin-top: 0pt;
+    margin-right: 0.05in;
+    margin-left: 0.05in;
+    margin-bottom: .0001pt;
+}
+
+hr{
+    width: 85%;
+    margin:0.05in;
+    /*padding-left:0px;*/
+    /*box-align:left;*/
+    background-color:#003000;
+}
+​
+ul.res{
+    list-style-type: circle;
+}
+ul.TA{
+    list-style-type: circle;
+    margin-top: 15px;
+    padding-top: 0px;
+}
+
+li.wide {
+    margin-bottom: 20px;
+    font-size: 16px !important;
+     
+}
+
+li.narrow{
+    margin-bottom: 5px;
+    font-size: 16px !important;
+}
+
