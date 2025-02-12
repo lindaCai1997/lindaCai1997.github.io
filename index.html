@@ -3,7 +3,69 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            .tags {
+                margin-bottom: 15px; /* Increase space below the buttons */
+                margin-top: 10px; /* Increase space above the buttons */
+            }
+    
+            .tag {
+                display: inline-block;
+                padding: 5px 15px;
+                margin: 5px;
+                background-color: #f0f0f0;
+                border-radius: 10px; /* Rounded corners */
+                cursor: pointer;
+                font-size: 12px;
+                color: white;
+                text-align: center;
+                border: 2px solid transparent; /* Add this for the border */
+            }
+    
+            /* Different colors for tags */
+            /* Different colors for tags */
+            
+            .tag-all {
+                background-color: #81C784; /* Lighter Green */
+            }
+            .tag-online {
+                background-color: #64B5F6; /* Lighter Blue */
+            }
+            .tag-incentive {
+                background-color: #FFB74D; /* Lighter Orange */
+            }
+            .tag-ml {
+                background-color: #CE93D8; /* Lighter Purple */
+            }
+    
+            .tag:hover {
+                opacity: 0.8;
+                border: 2px solid black; /* Change border color on hover */
+            }
+    
+            .hidden {
+                display: none;
+            }
+        </style>
+        <script>
+            // Function to filter papers by tag
+            function filterPapers(tag) {
+                // Get all papers
+                const papers = document.querySelectorAll('.paper');
+                
+                // Show or hide papers based on the tag
+                papers.forEach(paper => {
+                    if (tag === 'all' || paper.dataset.tags.includes(tag)) {
+                        paper.classList.remove('hidden');
+                    } else {
+                        paper.classList.add('hidden');
+                    }
+                });
+            }
+        </script>
     </head>
+
+
     <body>
     <div class="title"> 
             Linda Cai
@@ -33,17 +95,28 @@
                 <p class="intro">Here is my <a href="source_files/Linda_Cai_CV.pdf">CV</a>.</p>
 
                 <h2> Conference Publications and Preprints </h2>
+                
+                <!-- Tag Filters -->
+                <!--
+                <div class="tags">
+                    <span class="tag tag-all" onclick="filterPapers('all')">All</span>
+                    <span class="tag tag-online" onclick="filterPapers('online-algorithms')">Online Algorithms</span>
+                    <span class="tag tag-incentive" onclick="filterPapers('incentives')">Incentive</span>
+                    <span class="tag tag-ml" onclick="filterPapers('machine-learning')">Learning</span>
+                </div>
+                -->
+
                 <ul class="TA">
-                    <li class="wide">
+                    <li class="wide paper" data-tags="machine-learning">
                         <a href="https://arxiv.org/abs/2406.00924">Faster Diffusion-based Sampling with Randomized Midpoints: Sequential and Parallel
                         </a> <br />
                         
                         Shivam Gupta, Linda Cai, Sitan Chen. <br />
     
-                        <i>In submission to ICLR, 2025.</i>
+                        <i>The 13th International Conference on Learning Representations (ICLR), 2025.</i>
                     </li>
                     
-                    <li class="wide">
+                    <li class="wide paper" data-tags="incentives">
                         <a href="https://arxiv.org/abs/2407.16949">Profitable Manipulations of Cryptographic Self-Selection are Statistically Detectable</a> <br />
                         
                         Linda Cai, Jingyi Liu, S. Matthew Weinberg, Chenghan Zhou. <br />
@@ -51,7 +124,7 @@
                         <i>The 6th international conference on Advances in Financial Technologies (AFT), 2024. </i>
                     </li>
 
-                    <li class="wide">
+                    <li class="wide paper" data-tags="incentives">
                         <a href="https://arxiv.org/abs/2406.13835">Bundling in Oligopoly: Revenue Maximization with Single-Item Competitors</a> <br />
                         
                         Moshe Babaioff, Linda Cai, Brendan Lucier. <br />
@@ -60,7 +133,7 @@
                         <a href="source_files/oligopoly_slides.pdf">[slides]</a>  
                     </li>
 
-                    <li class="wide">
+                    <li class="wide paper" data-tags="incentives machine-learning">
                         <a href="https://arxiv.org/abs/2307.04175">Selling to Multiple No-Regret Buyers</a> <br />
                         
                         Linda Cai, S. Matthew Weinberg, Evan Wildenhain, Shirley Zhang. <br />
@@ -69,7 +142,7 @@
                         <a href="source_files/no_regret_slides.pdf">[slides]</a> 
                     </li>
 
-                    <li class="wide">
+                    <li class="wide paper" data-tags="online-algorithms">
                         <a href="https://arxiv.org/abs/2309.14555">Optimal Stopping with Multi-Dimensional Comparative Loss Aversion</a> <br />
                         
                         Linda Cai, Joshua Gardner, S. Matthew Weinberg. <br />
@@ -78,7 +151,7 @@
                         <a href="source_files/optimal_stopping_slides.pdf">[slides]</a> 
                     </li>
                     
-                    <li class="wide">
+                    <li class="wide paper" data-tags="online-algorithms">
                         <a href="https://arxiv.org/abs/2212.01524">Pandora's Problem with Nonobligatory Inspection: Optimal Structure and a PTAS. </a> <br />
                         
                         Hedyeh Beyhaghi, Linda Cai. <br />
@@ -86,7 +159,7 @@
                         <i>In Proceedings of 55th Annual ACM Symposium on Theory of Computing (STOC), 2023.</i> <br />
                         <a href="https://www.youtube.com/watch?v=KkTAda_-CS4&ab_channel=SIGACTEC">[video]</a> &nbsp; <a href="source_files/pandora_short_slides.pdf">[short slides]</a> &nbsp; <a href="source_files/pandora_long_slides.pdf">[long slides]</a>  
                     </li>
-                    <li class="wide">
+                    <li class="wide paper" data-tags="incentives online-algorithms">
                         <a href="https://arxiv.org/abs/1910.04406">The Short-Side Advantage in Random Matching Markets. </a> <br />
                         
                         Linda Cai, Clayton Thomas. <br />
@@ -94,7 +167,7 @@
                         <i>In Proceedings of the SIAM Symposium on Simplicity in Algorithms (SOSA), 2022.</i> <br/>
                         <a href="source_files/short_side_slides.pdf">[slides]</a> 
                     </li>
-                    <li class="wide">
+                    <li class="wide paper" data-tags="incentives">
                         <a href="https://arxiv.org/abs/2105.08292">99% Revenue with Constant Enhanced Competition.</a><br />
 
                         Linda Cai, Raghuvansh R. Saxena.<br />
@@ -105,7 +178,7 @@
 
                     </li>
 
-                    <li class="wide">
+                    <li class="wide paper" data-tags="incentives">
                         <a href="https://arxiv.org/abs/1910.04342">Implementation in Advised Strategies: Welfare Guarantees from Posted-Price Mechanisms when Demand Queries are NP-hard.</a><br />
 
                         Linda Cai, Clayton Thomas, S. Matthew Weinberg.<br />
@@ -114,7 +187,7 @@
 
                         <a href="source_files/advise_strategy_slides.pdf">[slides]</a> 
                     </li>
-                    <li class="wide">
+                    <li class="wide paper" data-tags="machine-learning">
                         <a href="https://arxiv.org/abs/2301.08695"> Baechi: fast device placement of machine learning graphs.</a><br />
     
                         Beomyeol Jeon, Linda Cai, Pallavi Srivastava, Jintao Jiang, Xiaolan Ke, Yitao Meng, Cong Xie, Indranil Gupta. <br />
