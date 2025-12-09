@@ -1,7 +1,11 @@
+:root{
+    --nav-green: #4a5f29;
+}
+
 body{
     color: #000000;
     font-size: 16px !important;
-    font-family: "Verdana"; 
+    font-family: "Verdana";
 }
 div.bigBox{
     margin: 0;
@@ -202,6 +206,51 @@ a:hover{
 /*    background-color: #000000;*/
 /*    font-size: 18px;*/
 
+}
+nav.site-nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    width: 85%;
+    margin: 0.15in auto 0.25in;
+    padding: 10px 16px;
+    background-color: #f7f9f4;
+    border: 1px solid rgba(74, 95, 41, 0.18);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+nav.site-nav a{
+    color: var(--nav-green);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 8px;
+    letter-spacing: 0.01em;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+nav.site-nav a:hover,
+nav.site-nav a:focus-visible{
+    color: #283315;
+    background-color: rgba(74, 95, 41, 0.12);
+}
+
+nav.site-nav a:active{
+    transform: translateY(1px);
+}
+
+@media (max-width: 640px){
+    nav.site-nav{
+        justify-content: center;
+        padding: 12px;
+    }
+
+    nav.site-nav a{
+        flex: 1 1 120px;
+        text-align: center;
+    }
 }
 /*https://coolors.co/f1dbd2-93928d-ecbeb4-b19994-6d6875*/
 
