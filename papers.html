@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Blogs – Linda Cai</title>
+    </head>
+
+    <body>
+        <div class="title"> 
+            Linda Cai
+            <div class="affiliation">
+                <p>Electrical Engineering & Computer Sciences, UC Berkeley</p>
+                <p>tcai@berkeley.edu</p>
+            </div>
+        </div>
+
+        <!-- Same navigation bar, Blogs is active here -->
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Main</a>
+            <a href="papers.html" class="nav-link active">Papers</a>
+            <!-- <a href="blogs.html" class="nav-link">Blogs</a> -->
+            <a href="service.html" class="nav-link">Teaching & Service</a>
+  
+        </nav>
+        <div class="bigBox">
+            <div id="image">
+                <img src="images/rocks.png" />
+            </div>
+            <div id="digiWork">
+                <p> <i> Most papers here follow the <a href="https://moleseyhill.com/2010-03-22-hardy-littlewood-rules.html">Hardy Littlewood Rules</a> where authors are presented in alphabetical order, with a few exceptions. (*) indicates equal contribution.</i></p>
+                <h2> Ongoing Work and Preprints </h2>
+                <ul class="TA">
+                    <li class="wide paper" id="data-attribution">
+                        Task-Specific Data Selection via Sparse Autoencoders <br />
+                        Linda Cai*, Xinyan Hu*, Alex Pan*, Michael I. Jordan, Jacob Steinhardt. <br />
+                        <i>Ongoing work.</i>
+                    </li>
+                    <li class="wide paper" id="cost-aware-stopping" data-tags="machine-learning">
+                        <a href="https://www.arxiv.org/abs/2507.12453">Cost-aware Stopping for Bayesian Optimization</a> <br />
+                        
+                        Qian Xie*, Linda Cai*, Alexander Terenin, Peter I. Frazier, Ziv Scully. <br />
+                        <i>In submission. Preliminary version accepted to AutoML 2025, Non-archival Track. </i>  <br />
+                        <a href="source_files/AutoML_Stopping_poster.pdf">[poster]</a> &nbsp; <a href="https://github.com/QianJaneXie/CostAwareStoppingBayesOpt">[code]</a>
+                    </li>
+                </ul>
+                <h2> Conference Publications</h2>
+              
+                <!-- Tag Filters -->
+                <!--
+                <div class="tags">
+                    <span class="tag tag-all" onclick="filterPapers('all')">All</span>
+                    <span class="tag tag-online" onclick="filterPapers('online-algorithms')">Online Algorithms</span>
+                    <span class="tag tag-incentive" onclick="filterPapers('incentives')">Incentive</span>
+                    <span class="tag tag-ml" onclick="filterPapers('machine-learning')">Learning</span>
+                </div>
+                -->               
+                <ul class="TA">
+                    <li class="wide paper" id="diffusion" data-tags="machine-learning">
+                        <a href="https://arxiv.org/abs/2406.00924">Faster Diffusion-based Sampling with Randomized Midpoints: Sequential and Parallel
+                        </a> <br />
+                        
+                        Shivam Gupta, Linda Cai, Sitan Chen. <br />
+    
+                        <i>The 13th International Conference on Learning Representations (ICLR), 2025.</i> <br />
+                        <a href="https://iclr.cc/virtual/2025/poster/29931">[video]</a> &nbsp; <a href="https://iclr.cc/media/PosterPDFs/ICLR%202025/29931.png?t=1745641586.9163568">[poster]</a>
+                    </li>
+                    <li class="wide paper" data-tags="incentives">
+                        <a href="https://www.arxiv.org/abs/2506.09291">Competition Complexity in Multi-Item Auctions: Beyond VCG and Regularity</a> <br />
+                        
+                        Hedyeh Beyhaghi, Linda Cai, Yiding Feng, Yingkai Li, S. Matthew Weinberg. <br />
+    
+                        <i>The 26th ACM Conference on Economics and Computation (EC), 2025.</i> 
+                    </li>
+
+
+                    <li class="wide paper" data-tags="incentives">
+                        <a href="https://arxiv.org/abs/2407.16949">Profitable Manipulations of Cryptographic Self-Selection are Statistically Detectable</a> <br />
+                        
+                        Linda Cai, Jingyi Liu, S. Matthew Weinberg, Chenghan Zhou. <br />
+    
+                        <i>The 6th international conference on Advances in Financial Technologies (AFT), 2024. </i>
+                    </li>
+
+                    <li class="wide paper" data-tags="incentives">
+                        <a href="https://arxiv.org/abs/2406.13835">Bundling in Oligopoly: Revenue Maximization with Single-Item Competitors</a> <br />
+                        
+                        Moshe Babaioff, Linda Cai, Brendan Lucier. <br />
+                        
+                        <i>The 25th ACM Conference on Economics and Computation (EC), 2024.</i><br />
+                        <a href="source_files/oligopoly_slides.pdf">[slides]</a>  
+                    </li>
+
+                    <li class="wide paper" data-tags="incentives machine-learning">
+                        <a href="https://arxiv.org/abs/2307.04175">Selling to Multiple No-Regret Buyers</a> <br />
+                        
+                        Linda Cai, S. Matthew Weinberg, Evan Wildenhain, Shirley Zhang. <br />
+    
+                        <i>The 19th Conference On Web And InterNet Economics (WINE), 2023.</i> <br />
+                        <a href="source_files/no_regret_slides.pdf">[slides]</a> 
+                    </li>
+
+                    <li class="wide paper" data-tags="online-algorithms">
+                        <a href="https://arxiv.org/abs/2309.14555">Optimal Stopping with Multi-Dimensional Comparative Loss Aversion</a> <br />
+                        
+                        Linda Cai, Joshua Gardner, S. Matthew Weinberg. <br />
+    
+                        <i>The 19th Conference On Web And InterNet Economics (WINE), 2023.</i> <br />
+                        <a href="source_files/optimal_stopping_slides.pdf">[slides]</a> 
+                    </li>
+                    
+                    <li class="wide paper" data-tags="online-algorithms">
+                        <a href="https://arxiv.org/abs/2212.01524">Pandora's Problem with Nonobligatory Inspection: Optimal Structure and a PTAS. </a> <br />
+                        
+                        Hedyeh Beyhaghi, Linda Cai. <br />
+    
+                        <i>In Proceedings of 55th Annual ACM Symposium on Theory of Computing (STOC), 2023.</i> <br />
+                        <a href="https://www.youtube.com/watch?v=KkTAda_-CS4&ab_channel=SIGACTEC">[video]</a> &nbsp; <a href="source_files/pandora_short_slides.pdf">[short slides]</a> &nbsp; <a href="source_files/pandora_long_slides.pdf">[long slides]</a>  
+                    </li>
+                    <li class="wide paper" data-tags="incentives online-algorithms">
+                        <a href="https://arxiv.org/abs/1910.04406">The Short-Side Advantage in Random Matching Markets. </a> <br />
+                        
+                        Linda Cai, Clayton Thomas. <br />
+    
+                        <i>In Proceedings of the SIAM Symposium on Simplicity in Algorithms (SOSA), 2022.</i> <br/>
+                        <a href="source_files/short_side_slides.pdf">[slides]</a> 
+                    </li>
+                    <li class="wide paper" data-tags="incentives">
+                        <a href="https://arxiv.org/abs/2105.08292">99% Revenue with Constant Enhanced Competition.</a><br />
+
+                        Linda Cai, Raghuvansh R. Saxena.<br />
+
+                        <i>In Proceedings of The Twenty-Second ACM Conference on Economics and Computation (EC), 2021.</i> <br/>
+
+                        <a href="https://www.youtube.com/watch?v=Xi-U086RRCs&ab_channel=ACMSIGecom">[video]</a> &nbsp; <a href="source_files/bk_slides.pdf">[slides]</a>  
+
+                    </li>
+
+                    <li class="wide paper" data-tags="incentives">
+                        <a href="https://arxiv.org/abs/1910.04342">Implementation in Advised Strategies: Welfare Guarantees from Posted-Price Mechanisms when Demand Queries are NP-hard.</a><br />
+
+                        Linda Cai, Clayton Thomas, S. Matthew Weinberg.<br />
+
+                        <i>In Proceedings of the 11th Innovations in Theoretical Computer Science (ITCS), 2020.</i> <br />
+
+                        <a href="source_files/advise_strategy_slides.pdf">[slides]</a> 
+                    </li>
+                    <li class="wide paper" data-tags="machine-learning">
+                        <a href="https://arxiv.org/abs/2301.08695"> Baechi: fast device placement of machine learning graphs.</a><br />
+    
+                        Beomyeol Jeon, Linda Cai, Pallavi Srivastava, Jintao Jiang, Xiaolan Ke, Yitao Meng, Cong Xie, Indranil Gupta. <br />
+    
+                        <i>In Proceedings of ACM Symposium on Cloud Computing (SOCC), 2020.</i>
+                        <br />  
+                        <a href="source_files/baechi_slides.pdf">[slides]</a>   
+                    </li> 
+                </ul>
+
+                <h2> Survey Papers</h2>
+                <ul class="TA"> 
+                    <li class="wide">
+                        <a href="https://www.sigecom.org/exchanges/volume_21/1/BEYHAGHI.pdf"> Recent Developments in Pandora’s Box Problem: Variants and Applications.</a> <br />
+                        Hedyeh Beyhaghi, Linda Cai. <br />
+                        <i> SIGecom Exchanges Vol. 21.1, 2023.</i>
+                    </li>
+                </ul>
+                <!-- Later: add a list of blog posts, dates, etc. -->
+            </div>
+        </div>
+    </body>
+</html>
