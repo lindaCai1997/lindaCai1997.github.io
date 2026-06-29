@@ -12,6 +12,17 @@ div.bigBox{
     font-family: "roboto";
 }
 
+.footnote {
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 2.5rem;
+}
+
+sup a {
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
 h1{
     color: #000000;
     font-size: 60px !important;
